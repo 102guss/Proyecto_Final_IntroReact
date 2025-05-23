@@ -1,0 +1,121 @@
+/* SeriesCatalog.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.catalog-title {
+  text-align: center;
+  color: #222;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.catalog-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.catalog-inputs input,
+.catalog-inputs select,
+.catalog-inputs button {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.catalog-inputs button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.catalog-inputs button:hover {
+  background-color: #0056b3;
+}
+
+.series-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.series-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.series-card:hover {
+  transform: translateY(-5px);
+}
+
+.series-card img {
+  width: 100%;
+  height: auto;
+}
+
+.series-card h3 {
+  margin: 10px;
+  font-size: 18px;
+}
+
+.series-card p {
+  margin: 0 10px 10px 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 80vh;
+  position: relative;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.modal-content button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
