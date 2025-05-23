@@ -1,3 +1,5 @@
+Este es un  catálogo de peliculas que se crea usando la api "https://www.tvmaze.com/api". Usando la biblioteca React.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
